@@ -1,0 +1,39 @@
+name:                eratosthenes-sieve
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            http://github.com/theUniC/eratosthenes-sieve.hs
+license:             BSD3
+license-file:        LICENSE
+author:              Christian Soronellas
+maintainer:          theunic@gmail.com
+-- copyright:           
+category:            Web
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+library
+  default-language: Haskell2010
+  hs-source-dirs:
+    src
+  exposed-modules:
+    EratosthenesSieve
+  build-depends:
+    base >= 4.7 && < 5
+
+test-suite eratosthenes-sieve-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  default-language: Haskell2010
+  hs-source-dirs:
+    test
+  build-depends:
+      base
+    , eratosthenes-sieve
+    , hspec
+
+source-repository head
+  type:     git
+  location: https://github.com/theUniC/eratosthenes-sieve.hs
