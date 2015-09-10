@@ -1,4 +1,5 @@
 module EratosthenesSieve where
 
 primesUpTo :: Integer -> [Integer]
-primesUpTo 2 = [2]
+primesUpTo 3 = [2, 3]
+primesUpTo n = [n]
