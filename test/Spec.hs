@@ -8,3 +8,4 @@ main = hspec $ do
       primesUpTo 2 `shouldBe` [2]
       primesUpTo 3 `shouldBe` [2, 3]
       primesUpTo 5 `shouldBe` [2, 3, 5]
+      primesUpTo 7 `shouldBe` [2, 3, 5, 7]
