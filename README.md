@@ -8,3 +8,6 @@ you should run
 > stack test
 ```
 
+You can check all the steps taken at
+
+**https://github.com/theUniC/eratosthenes-sieve.hs/commits/master**
