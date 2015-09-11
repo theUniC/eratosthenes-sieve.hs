@@ -4,8 +4,8 @@ In order to run the tests you should have **[stack](https://github.com/commercia
 you should run
 
 ```
-> stack build
-> stack test
+stack build
+stack test
 ```
 
 You can check all the steps taken at
