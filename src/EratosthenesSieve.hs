@@ -5,9 +5,6 @@ module EratosthenesSieve
 where
 
 primesUpTo :: (Eq a, Integral a) => a -> [a]
--- primesUpTo 7 = [2, 3, 5, 7]
--- primesUpTo 5 = [2, 3, 5]
--- primesUpTo 3 = [2, 3]
 primesUpTo = reverse . primesUpTo'
 
 primesUpTo' :: (Eq a, Integral a) => a -> [a]
