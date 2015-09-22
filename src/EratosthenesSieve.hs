@@ -10,7 +10,7 @@ primesUpTo :: Integer -> [Integer]
 primesUpTo n = sieve [2 .. n]
   where
     sieve []     = []
-    sieve (x:xs) = (:) x $ sieve $ do
+    sieve (x:xs) = ((:) x (sieve (do
       p <- xs
       guard (p `mod` x > 0)
-      return p
+      return p)))
